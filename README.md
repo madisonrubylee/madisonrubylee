@@ -1,6 +1,3 @@
- <br />   
-
-# Hi there 🌏
 ### 👩🏻‍💻 Front-end developer 
 <br />
 
