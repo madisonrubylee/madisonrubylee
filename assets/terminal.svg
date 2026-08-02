@@ -5,83 +5,71 @@
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <defs>
-    <linearGradient id="bgGradient" x1="0" y1="0" x2="900" y2="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#141316" />
-      <stop offset="52%" stop-color="#19181D" />
-      <stop offset="100%" stop-color="#1C1A21" />
-    </linearGradient>
-  </defs>
-
   <style>
-    .title {
-      font-family: Inter, Arial, sans-serif;
-      font-size: 48px;
+    .name {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 82px;
       font-weight: 700;
-      letter-spacing: -1px;
-      fill: #F3F1EF;
+      letter-spacing: -5px;
+      fill: #111111;
     }
 
-    .subtitle {
-      font-family: Inter, Arial, sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      letter-spacing: 3px;
-      fill: #B7ADD0;
+    .role {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+      fill: #111111;
     }
 
-    .meta {
-      font-family: Inter, Arial, sans-serif;
-      font-size: 14px;
-      fill: #8E8898;
+    .small {
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 11px;
+      letter-spacing: 0.4px;
+      fill: #6F6F6F;
     }
 
-    .dot {
-      animation: pulse 3.4s ease-in-out infinite;
-      transform-origin: center;
+    .accent {
+      animation: slide 4.5s ease-in-out infinite;
     }
 
-    .d1 { animation-delay: 0s; fill: #6E6877; }
-    .d2 { animation-delay: 0.25s; fill: #847A96; }
-    .d3 { animation-delay: 0.5s; fill: #A89FC0; }
-    .d4 { animation-delay: 0.75s; fill: #7A7286; }
-    .d5 { animation-delay: 1s; fill: #C1B7D8; }
+    .cursor {
+      animation: blink 1s steps(2, start) infinite;
+    }
 
-    @keyframes pulse {
+    @keyframes slide {
       0%, 100% {
-        opacity: 0.18;
-        transform: scale(1);
+        transform: translateX(0);
       }
 
       50% {
-        opacity: 0.72;
-        transform: scale(1.18);
+        transform: translateX(54px);
       }
     }
 
-    @media (prefers-color-scheme: light) {
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
       .background {
-        fill: #FAF9F7;
-        stroke: #E7E3E8;
+        fill: #111111;
       }
 
-      .title {
-        fill: #18171B;
+      .name,
+      .role {
+        fill: #F4F4F4;
       }
 
-      .subtitle {
-        fill: #8D7FAF;
+      .small {
+        fill: #888888;
       }
 
-      .meta {
-        fill: #7E7786;
+      .border {
+        stroke: #303030;
       }
-
-      .d1 { fill: #D2CCD9; }
-      .d2 { fill: #C2BAD0; }
-      .d3 { fill: #A99BC0; }
-      .d4 { fill: #D7D1DE; }
-      .d5 { fill: #B7AACB; }
     }
   </style>
 
@@ -89,49 +77,68 @@
     class="background"
     width="900"
     height="300"
-    rx="22"
-    fill="url(#bgGradient)"
-    stroke="#2A2731"
+    fill="#FFFFFF"
   />
 
-  <circle class="dot d1" cx="650" cy="70" r="4" />
-  <circle class="dot d2" cx="690" cy="70" r="4" />
-  <circle class="dot d3" cx="730" cy="70" r="4" />
-  <circle class="dot d4" cx="770" cy="70" r="4" />
-  <circle class="dot d5" cx="810" cy="70" r="4" />
+  <rect
+    class="border"
+    x="0.5"
+    y="0.5"
+    width="899"
+    height="299"
+    stroke="#E2E2E2"
+  />
 
-  <circle class="dot d2" cx="650" cy="110" r="4" />
-  <circle class="dot d3" cx="690" cy="110" r="4" />
-  <circle class="dot d4" cx="730" cy="110" r="4" />
-  <circle class="dot d5" cx="770" cy="110" r="4" />
-  <circle class="dot d1" cx="810" cy="110" r="4" />
+  <text x="42" y="109" class="name">
+    Chloe<tspan class="cursor" fill="#D84343">.</tspan>
+  </text>
 
-  <circle class="dot d3" cx="650" cy="150" r="4" />
-  <circle class="dot d4" cx="690" cy="150" r="4" />
-  <circle class="dot d5" cx="730" cy="150" r="4" />
-  <circle class="dot d1" cx="770" cy="150" r="4" />
-  <circle class="dot d2" cx="810" cy="150" r="4" />
+  <text x="46" y="148" class="role">
+    Frontend Developer
+  </text>
 
-  <circle class="dot d4" cx="650" cy="190" r="4" />
-  <circle class="dot d5" cx="690" cy="190" r="4" />
-  <circle class="dot d1" cx="730" cy="190" r="4" />
-  <circle class="dot d2" cx="770" cy="190" r="4" />
-  <circle class="dot d3" cx="810" cy="190" r="4" />
-
-  <circle class="dot d5" cx="650" cy="230" r="4" />
-  <circle class="dot d1" cx="690" cy="230" r="4" />
-  <circle class="dot d2" cx="730" cy="230" r="4" />
-  <circle class="dot d3" cx="770" cy="230" r="4" />
-  <circle class="dot d4" cx="810" cy="230" r="4" />
-
-  <text x="60" y="122" class="title">Chloe</text>
-  <text x="62" y="160" class="subtitle">Frontend Developer</text>
-
-  <text x="62" y="212" class="meta">
+  <text x="46" y="237" class="small">
     React / TypeScript / Next.js
   </text>
 
-<text x="62" y="240" class="meta">
-  Currently at eBay Japan
-</text>
+  <text x="46" y="260" class="small">
+    Seoul — eBay Japan
+  </text>
+
+  <text
+    x="836"
+    y="40"
+    text-anchor="end"
+    class="small"
+  >
+    2026
+  </text>
+
+  <text
+    x="836"
+    y="262"
+    text-anchor="end"
+    class="small"
+  >
+    37.5665 N
+  </text>
+
+  <g class="accent">
+    <rect
+      x="662"
+      y="102"
+      width="112"
+      height="112"
+      fill="#D84343"
+    />
+  </g>
+
+  <rect
+    x="695"
+    y="135"
+    width="112"
+    height="112"
+    fill="none"
+    stroke="#111111"
+  />
 </svg>
