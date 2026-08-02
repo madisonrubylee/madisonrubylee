@@ -124,8 +124,8 @@
   <circle class="dot d3" cx="770" cy="230" r="4" />
   <circle class="dot d4" cx="810" cy="230" r="4" />
 
-  <text x="60" y="122" class="title">CHLOE</text>
-  <text x="62" y="160" class="subtitle">FRONTEND DEVELOPER</text>
+  <text x="60" y="122" class="title">Chloe</text>
+  <text x="62" y="160" class="subtitle">Frontend Developer</text>
 
   <text x="62" y="212" class="meta">
     React / TypeScript / Next.js
