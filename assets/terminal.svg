@@ -5,39 +5,47 @@
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="900" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#141316" />
+      <stop offset="52%" stop-color="#19181D" />
+      <stop offset="100%" stop-color="#1C1A21" />
+    </linearGradient>
+  </defs>
+
   <style>
     .title {
       font-family: Inter, Arial, sans-serif;
       font-size: 48px;
       font-weight: 700;
       letter-spacing: -1px;
-      fill: #f4f4f4;
+      fill: #F3F1EF;
     }
 
     .subtitle {
       font-family: Inter, Arial, sans-serif;
       font-size: 15px;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: 3px;
-      fill: #8a8a8a;
+      fill: #B7ADD0;
     }
 
     .meta {
       font-family: Inter, Arial, sans-serif;
       font-size: 14px;
-      fill: #777777;
+      fill: #8E8898;
     }
 
     .dot {
-      animation: pulse 2.8s ease-in-out infinite;
+      animation: pulse 3.4s ease-in-out infinite;
       transform-origin: center;
     }
 
-    .d1 { animation-delay: 0s; }
-    .d2 { animation-delay: 0.3s; }
-    .d3 { animation-delay: 0.6s; }
-    .d4 { animation-delay: 0.9s; }
-    .d5 { animation-delay: 1.2s; }
+    .d1 { animation-delay: 0s; fill: #6E6877; }
+    .d2 { animation-delay: 0.25s; fill: #847A96; }
+    .d3 { animation-delay: 0.5s; fill: #A89FC0; }
+    .d4 { animation-delay: 0.75s; fill: #7A7286; }
+    .d5 { animation-delay: 1s; fill: #C1B7D8; }
 
     @keyframes pulse {
       0%, 100% {
@@ -46,24 +54,34 @@
       }
 
       50% {
-        opacity: 0.9;
-        transform: scale(1.35);
+        opacity: 0.72;
+        transform: scale(1.18);
       }
     }
 
     @media (prefers-color-scheme: light) {
       .background {
-        fill: #f7f7f7;
+        fill: #FAF9F7;
+        stroke: #E7E3E8;
       }
 
       .title {
-        fill: #151515;
+        fill: #18171B;
       }
 
-      .subtitle,
-      .meta {
-        fill: #707070;
+      .subtitle {
+        fill: #8D7FAF;
       }
+
+      .meta {
+        fill: #7E7786;
+      }
+
+      .d1 { fill: #D2CCD9; }
+      .d2 { fill: #C2BAD0; }
+      .d3 { fill: #A99BC0; }
+      .d4 { fill: #D7D1DE; }
+      .d5 { fill: #B7AACB; }
     }
   </style>
 
@@ -72,40 +90,39 @@
     width="900"
     height="300"
     rx="22"
-    fill="#101010"
+    fill="url(#bgGradient)"
+    stroke="#2A2731"
   />
 
-  <g fill="#686868">
-    <circle class="dot d1" cx="650" cy="70" r="4" />
-    <circle class="dot d2" cx="690" cy="70" r="4" />
-    <circle class="dot d3" cx="730" cy="70" r="4" />
-    <circle class="dot d4" cx="770" cy="70" r="4" />
-    <circle class="dot d5" cx="810" cy="70" r="4" />
+  <circle class="dot d1" cx="650" cy="70" r="4" />
+  <circle class="dot d2" cx="690" cy="70" r="4" />
+  <circle class="dot d3" cx="730" cy="70" r="4" />
+  <circle class="dot d4" cx="770" cy="70" r="4" />
+  <circle class="dot d5" cx="810" cy="70" r="4" />
 
-    <circle class="dot d2" cx="650" cy="110" r="4" />
-    <circle class="dot d3" cx="690" cy="110" r="4" />
-    <circle class="dot d4" cx="730" cy="110" r="4" />
-    <circle class="dot d5" cx="770" cy="110" r="4" />
-    <circle class="dot d1" cx="810" cy="110" r="4" />
+  <circle class="dot d2" cx="650" cy="110" r="4" />
+  <circle class="dot d3" cx="690" cy="110" r="4" />
+  <circle class="dot d4" cx="730" cy="110" r="4" />
+  <circle class="dot d5" cx="770" cy="110" r="4" />
+  <circle class="dot d1" cx="810" cy="110" r="4" />
 
-    <circle class="dot d3" cx="650" cy="150" r="4" />
-    <circle class="dot d4" cx="690" cy="150" r="4" />
-    <circle class="dot d5" cx="730" cy="150" r="4" />
-    <circle class="dot d1" cx="770" cy="150" r="4" />
-    <circle class="dot d2" cx="810" cy="150" r="4" />
+  <circle class="dot d3" cx="650" cy="150" r="4" />
+  <circle class="dot d4" cx="690" cy="150" r="4" />
+  <circle class="dot d5" cx="730" cy="150" r="4" />
+  <circle class="dot d1" cx="770" cy="150" r="4" />
+  <circle class="dot d2" cx="810" cy="150" r="4" />
 
-    <circle class="dot d4" cx="650" cy="190" r="4" />
-    <circle class="dot d5" cx="690" cy="190" r="4" />
-    <circle class="dot d1" cx="730" cy="190" r="4" />
-    <circle class="dot d2" cx="770" cy="190" r="4" />
-    <circle class="dot d3" cx="810" cy="190" r="4" />
+  <circle class="dot d4" cx="650" cy="190" r="4" />
+  <circle class="dot d5" cx="690" cy="190" r="4" />
+  <circle class="dot d1" cx="730" cy="190" r="4" />
+  <circle class="dot d2" cx="770" cy="190" r="4" />
+  <circle class="dot d3" cx="810" cy="190" r="4" />
 
-    <circle class="dot d5" cx="650" cy="230" r="4" />
-    <circle class="dot d1" cx="690" cy="230" r="4" />
-    <circle class="dot d2" cx="730" cy="230" r="4" />
-    <circle class="dot d3" cx="770" cy="230" r="4" />
-    <circle class="dot d4" cx="810" cy="230" r="4" />
-  </g>
+  <circle class="dot d5" cx="650" cy="230" r="4" />
+  <circle class="dot d1" cx="690" cy="230" r="4" />
+  <circle class="dot d2" cx="730" cy="230" r="4" />
+  <circle class="dot d3" cx="770" cy="230" r="4" />
+  <circle class="dot d4" cx="810" cy="230" r="4" />
 
   <text x="60" y="122" class="title">CHLOE</text>
   <text x="62" y="160" class="subtitle">FRONTEND DEVELOPER</text>
@@ -114,7 +131,7 @@
     React / TypeScript / Next.js
   </text>
 
-  <text x="62" y="240" class="meta">
-    Seoul, KR
-  </text>
+<text x="62" y="240" class="meta">
+  Currently at eBay Japan
+</text>
 </svg>
