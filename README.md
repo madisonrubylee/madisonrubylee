@@ -8,7 +8,6 @@
 
 Frontend Developer based in Seoul.  
 Currently at **eBay Japan**.  
-Working with **React, TypeScript, and Next.js**.
 
 <br />
 
