@@ -4,16 +4,27 @@
 
 <br />
 
-### Selected Work
+### About
 
-| Project | Description |
-| --- | --- |
-| **@p9v/core** | Request orchestration for React and Next.js |
-| **든든집** | Public housing eligibility finder |
-| **Picky** | Community for purchase decisions |
+Frontend Developer based in Seoul.  
+Currently at **eBay Japan**.  
+Working with **React, TypeScript, and Next.js**.
 
 <br />
 
-### Currently using
+### Selected Projects
+
+**@p9v/core**  
+Request orchestration utilities for React and Next.js
+
+**든든집**  
+A service for finding public housing options based on user eligibility
+
+**React YouTube Jukebox**  
+A web app for exploring and playing YouTube-based playlists
+
+<br />
+
+### Tech
 
 `React` `TypeScript` `Next.js` `React Query` `Zustand`
