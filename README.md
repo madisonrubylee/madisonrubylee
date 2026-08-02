@@ -1,9 +1,19 @@
-### 👩🏻‍💻 Front-end developer 
+<p align="center">
+  <img src="./assets/terminal.svg" width="100%" alt="Profile banner" />
+</p>
+
 <br />
 
->I'm a front-end developer with a passion for JavaScript engineering and a strong focus on user experience
->I always aim to see the products I develop through the user's eyes.
+### Selected Work
 
- <br />  
+| Project | Description |
+| --- | --- |
+| **@p9v/core** | Request orchestration for React and Next.js |
+| **든든집** | Public housing eligibility finder |
+| **Picky** | Community for purchase decisions |
 
+<br />
 
+### Currently using
+
+`React` `TypeScript` `Next.js` `React Query` `Zustand`
