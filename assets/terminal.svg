@@ -1,0 +1,120 @@
+<svg
+  width="900"
+  height="300"
+  viewBox="0 0 900 300"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    .title {
+      font-family: Inter, Arial, sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      fill: #f4f4f4;
+    }
+
+    .subtitle {
+      font-family: Inter, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      fill: #8a8a8a;
+    }
+
+    .meta {
+      font-family: Inter, Arial, sans-serif;
+      font-size: 14px;
+      fill: #777777;
+    }
+
+    .dot {
+      animation: pulse 2.8s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    .d1 { animation-delay: 0s; }
+    .d2 { animation-delay: 0.3s; }
+    .d3 { animation-delay: 0.6s; }
+    .d4 { animation-delay: 0.9s; }
+    .d5 { animation-delay: 1.2s; }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 0.18;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.9;
+        transform: scale(1.35);
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      .background {
+        fill: #f7f7f7;
+      }
+
+      .title {
+        fill: #151515;
+      }
+
+      .subtitle,
+      .meta {
+        fill: #707070;
+      }
+    }
+  </style>
+
+  <rect
+    class="background"
+    width="900"
+    height="300"
+    rx="22"
+    fill="#101010"
+  />
+
+  <g fill="#686868">
+    <circle class="dot d1" cx="650" cy="70" r="4" />
+    <circle class="dot d2" cx="690" cy="70" r="4" />
+    <circle class="dot d3" cx="730" cy="70" r="4" />
+    <circle class="dot d4" cx="770" cy="70" r="4" />
+    <circle class="dot d5" cx="810" cy="70" r="4" />
+
+    <circle class="dot d2" cx="650" cy="110" r="4" />
+    <circle class="dot d3" cx="690" cy="110" r="4" />
+    <circle class="dot d4" cx="730" cy="110" r="4" />
+    <circle class="dot d5" cx="770" cy="110" r="4" />
+    <circle class="dot d1" cx="810" cy="110" r="4" />
+
+    <circle class="dot d3" cx="650" cy="150" r="4" />
+    <circle class="dot d4" cx="690" cy="150" r="4" />
+    <circle class="dot d5" cx="730" cy="150" r="4" />
+    <circle class="dot d1" cx="770" cy="150" r="4" />
+    <circle class="dot d2" cx="810" cy="150" r="4" />
+
+    <circle class="dot d4" cx="650" cy="190" r="4" />
+    <circle class="dot d5" cx="690" cy="190" r="4" />
+    <circle class="dot d1" cx="730" cy="190" r="4" />
+    <circle class="dot d2" cx="770" cy="190" r="4" />
+    <circle class="dot d3" cx="810" cy="190" r="4" />
+
+    <circle class="dot d5" cx="650" cy="230" r="4" />
+    <circle class="dot d1" cx="690" cy="230" r="4" />
+    <circle class="dot d2" cx="730" cy="230" r="4" />
+    <circle class="dot d3" cx="770" cy="230" r="4" />
+    <circle class="dot d4" cx="810" cy="230" r="4" />
+  </g>
+
+  <text x="60" y="122" class="title">CHLOE</text>
+  <text x="62" y="160" class="subtitle">FRONTEND DEVELOPER</text>
+
+  <text x="62" y="212" class="meta">
+    React / TypeScript / Next.js
+  </text>
+
+  <text x="62" y="240" class="meta">
+    Seoul, KR
+  </text>
+</svg>
