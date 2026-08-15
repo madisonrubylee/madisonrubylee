@@ -2,143 +2,87 @@
   width="900"
   height="300"
   viewBox="0 0 900 300"
-  fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
   <style>
+    .bg {
+      fill: #FFFFFF;
+    }
+
     .name {
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 82px;
+      font-size: 92px;
       font-weight: 700;
-      letter-spacing: -5px;
+      letter-spacing: -6px;
       fill: #111111;
     }
 
     .role {
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: -0.5px;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: -0.3px;
       fill: #111111;
     }
 
-    .small {
+    .meta {
       font-family: "SFMono-Regular", Consolas, monospace;
       font-size: 11px;
-      letter-spacing: 0.4px;
-      fill: #6F6F6F;
+      letter-spacing: 0.2px;
+      fill: #777777;
     }
 
-    .accent {
-      animation: slide 4.5s ease-in-out infinite;
-    }
-
-    .cursor {
-      animation: blink 1s steps(2, start) infinite;
-    }
-
-    @keyframes slide {
-      0%, 100% {
-        transform: translateX(0);
-      }
-
-      50% {
-        transform: translateX(54px);
-      }
-    }
-
-    @keyframes blink {
-      50% {
-        opacity: 0;
-      }
+    .line {
+      stroke: #111111;
+      stroke-width: 1;
     }
 
     @media (prefers-color-scheme: dark) {
-      .background {
-        fill: #111111;
+      .bg {
+        fill: #0D0D0D;
       }
 
       .name,
       .role {
-        fill: #F4F4F4;
+        fill: #F2F2F2;
       }
 
-      .small {
-        fill: #888888;
+      .meta {
+        fill: #777777;
       }
 
-      .border {
-        stroke: #303030;
+      .line {
+        stroke: #F2F2F2;
       }
     }
   </style>
 
-  <rect
-    class="background"
-    width="900"
-    height="300"
-    fill="#FFFFFF"
-  />
+  <rect class="bg" width="900" height="300" />
 
-  <rect
-    class="border"
-    x="0.5"
-    y="0.5"
-    width="899"
-    height="299"
-    stroke="#E2E2E2"
-  />
+  <text x="42" y="120" class="name">Chloe.</text>
 
-  <text x="42" y="109" class="name">
-    Chloe<tspan class="cursor" fill="#D84343">.</tspan>
-  </text>
-
-  <text x="46" y="148" class="role">
+  <text x="46" y="158" class="role">
     Frontend Developer
   </text>
 
-  <text x="46" y="237" class="small">
-    React / TypeScript / Next.js
-  </text>
-
-  <text x="46" y="260" class="small">
-    Seoul — eBay Japan
-  </text>
-
-  <text
-    x="836"
-    y="40"
-    text-anchor="end"
-    class="small"
-  >
-    2026
-  </text>
-
-  <text
-    x="836"
-    y="262"
-    text-anchor="end"
-    class="small"
-  >
-    37.5665 N
-  </text>
-
-  <g class="accent">
-    <rect
-      x="662"
-      y="102"
-      width="112"
-      height="112"
-      fill="#D84343"
-    />
-  </g>
-
-  <rect
-    x="695"
-    y="135"
-    width="112"
-    height="112"
-    fill="none"
-    stroke="#111111"
+  <line
+    x1="46"
+    y1="196"
+    x2="854"
+    y2="196"
+    class="line"
   />
+
+  <text x="46" y="229" class="meta">
+    React · TypeScript · Next.js
+  </text>
+
+  <text
+    x="854"
+    y="229"
+    text-anchor="end"
+    class="meta"
+  >
+    Seoul / eBay Japan
+  </text>
 </svg>
