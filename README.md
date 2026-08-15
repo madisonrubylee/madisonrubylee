@@ -2,8 +2,6 @@
   <img src="./assets/terminal.svg" width="100%" alt="Profile banner" />
 </p>
 
-<br />
-
 ### Selected Projects
 
 **@p9v/core**  
