@@ -4,13 +4,6 @@
 
 <br />
 
-### About
-
-Frontend Developer based in Seoul.  
-Currently at **eBay Japan**.  
-
-<br />
-
 ### Selected Projects
 
 **@p9v/core**  
